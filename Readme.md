@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Татьяна Кислякова](https://up.htmlacademy.ru/htmlcss/31/user/287893).
-* Наставник: `Юрий Михин`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
