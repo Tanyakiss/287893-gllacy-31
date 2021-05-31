@@ -6,26 +6,28 @@
   </head>
   <body>
     <header>
+      <a>
+        <img src="https://via.placeholder.com/154x64" alt="Логотип Глейси">
+      </a>
       <nav>
-        <a>
-          <img src="https://via.placeholder.com/154x64" alt="Логотип Глейси">
-        </a>
         <ul>
           <li>
             <a href="catalog.html">Каталог</a>
           </li>
           <li>
-            <a href="blank.html">Доставка и оплата</a>
+            <a href="#">Доставка и оплата</a>
           </li>
           <li>
-            <a href="blank.html">О компании</a>
+            <a href="#">О компании</a>
           </li>
         </ul>
-        <a href="blank.html"></a>
-        <a href="blank.html">Вход</a>
-        <a href="blank.html">2 товара</a>
-        с 10 до 20 ежедневно
-        8 812 450-25-25
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#">Вход</a></li>
+          <li><a href="#">2 товара</a></li>
+        </ul>
+        <p>с 10 до 20 ежедневно</p>
+        <p>8 812 450-25-25</p>
       </nav>
     </header>
     <main>
@@ -50,33 +52,69 @@
             <legend>Сортировка:</legend>
             <select>
               <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
             </select>
           </fieldset>
           <fieldset>
             <legend>Цена:</legend>
             <input type="range" min="0" max="100" step="1" value="50">
           </fieldset>
+          <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+            <label for="filter-baxter-of-california">Baxter of California</label>
           <fieldset>
             <legend>Жирность:</legend>
-            <input type="radio">0%
-            <input type="radio" checked>до 10%
-            <input type="radio">до 30%
-            <input type="radio">выше 30%
+              <ul>
+                <li>
+                  <input type="radio" name="fat" value="0" id="filter-fat-0">
+                  <label for="filter-fat-0">0%</label>
+                </li>
+                <li>
+                  <input type="radio" name="fat" value="10" id="filter-fat-10" checked>
+                  <label for="filter-fat-10">до 10%</label>
+                </li>
+                <li>
+                  <input type="radio" name="fat" value="30" id="filter-fat-30">
+                  <label for="filter-fat-30">до 30%</label>
+                </li>
+                <li>
+                  <input type="radio" name="fat" value="more 30" id="filter-fat-more-30">
+                  <label for="filter-fat-more-30">выше 30%</label>
+                </li>
+              </ul>
           </fieldset>
           <fieldset>
             <legend>Наполнители:</legend>
-            <input type="checkbox" checked>шоколадные
-            <input type="checkbox" checked>сахарные присыпки
-            <input type="checkbox">фрукты
-            <input type="checkbox">сиропы
-            <input type="checkbox">джемы
+              <ul>
+                <li>
+                  <input type="checkbox" name="chocolate" value="шоколадные" id="filter-chocolate" checked>
+                  <label for="filter-chocolate">шоколадныe</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="sugar" value="сахарные присыпки" id="filter-sugar" checked>
+                  <label for="filter-sugar">сахарные присыпки</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="fruits" value="фрукты" id="filter-fruits">
+                  <label for="filter-fruits">фрукты</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="syrup" value="сиропы" id="filter-syrop">
+                  <label for="filter-syrop">сиропы</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="jams" value="джемы" id="filter-jams">
+                  <label for="filter-jams">джемы</label>
+                </li>
+              </ul>
           </fieldset>
           <button type="submit">Применить</button>
         </form>
       </section>
 
       <section>
-        <h2>Меню</h2>
+        <h2>Каталог</h2>
           <ul>
             <li>
               <a href="#">
@@ -84,9 +122,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
               <p>
-                310
-                &#8399;/кг
+                <span>310</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -94,9 +133,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
               <p>
-                380
-                &#8399;/кг
+                <span>380</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -104,9 +144,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
               <p>
-                355
-                &#8399;/кг
+                <span>355</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -114,9 +155,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочное крем-брюле с карамельной подливкой ">
               </a>
               <p>
-                415
-                &#8399;/кг
+                <span>415</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -124,9 +166,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочное с брусничным джемом">
               </a>
               <p>
-                325
-                &#8399;/кг
+                <span>325</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -134,9 +177,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочно-черничное с цельными ягодами черники">
               </a>
               <p>
-                410
-                &#8399;/кг
+                <span>410</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -144,9 +188,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочно-лимонное с карамельной присыпкой">
               </a>
               <p>
-                315
-                &#8399;/кг
+                <span>315</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -154,9 +199,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочное с шоколадной стружкой">
               </a>
               <p>
-                320
-                &#8399;/кг
+                <span>320</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -164,9 +210,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочно-ванильное с кусочками шоколада">
               </a>
               <p>
-                440
-                &#8399;/кг
+                <span>440</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -174,9 +221,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочноe с ментоловым сиропом">
               </a>
               <p>
-                435
-                &#8399;/кг
+                <span>435</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -184,9 +232,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочное с кусочками черного шоколада">
               </a>
               <p>
-                355
-                &#8399;/кг
+                <span>355</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
             <li>
               <a href="#">
@@ -194,9 +243,10 @@
                 <img src="https://via.placeholder.com/267x267" alt="Сливочное с мятным сиропом">
               </a>
               <p>
-                420
-                &#8399;/кг
+                <span>420</span>
+                <span>&#8399;/кг</span>
               </p>
+              <button type="button">Быстрый просмотр</button>
             </li>
           </ul>
           <ul>
@@ -220,7 +270,7 @@
     </main>
 
     <footer>
-      <section>
+      <div>
         <h2>Мы в соцсетях</h2>
         <ul>
           <li>
@@ -236,9 +286,9 @@
             <a href="#">Твиттер</a>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <nav>
+      <div>
         <ul>
           <li>
             <img src="https://via.placeholder.com/15x13" alt="Иконка сердце" >
@@ -248,7 +298,7 @@
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
-      </nav>
+      </div>
 
       <section>
         <h2>Разработчики</h2>
